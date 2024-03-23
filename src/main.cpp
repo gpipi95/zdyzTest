@@ -13,7 +13,7 @@
 
 #define DEBUG
 #define CUSTOM_SETTINGS
-#define INCLUDE_LEDCONTROL_MODULE
+#define INCLUDE_GAMEPAD_MODULE
 
 HardwareSerial Serial3(PB11, PB10);
 
@@ -64,14 +64,14 @@ void loop()
   // delay(600);
   Dabble.processInput();
 
-  Serial.print("Led:");
-  Serial.print(LedControl.getpinNumber());
+  Serial.print("Angle:");
+  Serial.print(GamePad.getAngle());
   Serial.print('\t');
-  Serial.print("State:"); // 0 if led is Off. 1 if led is On.
-  Serial.print(LedControl.getpinState());
+  Serial.print("Radius:"); // 0 if led is Off. 1 if led is On.
+  Serial.print(GamePad.getRadius());
   Serial.print('\t');
-  Serial.print("Brightness:");
-  Serial.println(LedControl.readBrightness());
+  Serial.print("Start?:");
+  Serial.println(GamePad.isStartPressed());
 
   // analogWrite(PWMB, 10);
   // Serial.write("Hello World\r\n");
