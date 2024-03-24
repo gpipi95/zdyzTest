@@ -5,11 +5,11 @@
 #include "TTMotor.h"
 
 #define PWMB A2
-#define BIN1 PB6
-#define BIN2 PB7
+#define BIN1 PE5
+#define BIN2 PE6
 #define PWMA A0
-#define AIN1 PG6
-#define AIN2 PG7
+#define AIN1 PA4
+#define AIN2 PA5
 
 #define DabbleTx PB10
 #define DabbleRx PB11
