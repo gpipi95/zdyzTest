@@ -1,0 +1,11 @@
+Language: Cpp
+BasedOnStyle: WebKit
+AlignAfterOpenBracket: Align
+AlignOperands: Align
+AlignConsecutiveAssignments: true
+AlignConsecutiveDeclarations: true
+AlignEscapedNewlines: Left
+PackConstructorInitializers: Never
+AlignTrailingComments:
+    Kind: Always
+    OverEmptyLines: 2
